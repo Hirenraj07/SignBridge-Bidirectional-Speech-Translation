@@ -1,0 +1,54 @@
+<table border="1" style="border-collapse: collapse; width: 100%; font-family: sans-serif;">
+    <thead style="background-color: #f2f2f2;">
+        <tr>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Test Case ID</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Test Description</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Steps to Perform</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Expected Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-01</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Application Launch (Inference Mode)</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Run `python main.py` when a model file exists.</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">OpenCV window opens, and camera feed is live.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-02</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Initial State Verification</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Observe the text overlay at the bottom of the screen upon launch.</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The prediction area is empty until the frame buffer is filled.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-03</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">First Prediction Trigger</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Remain in front of the camera for at least 150 frames (5-10 seconds).</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The prediction text appears at the bottom of the screen.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-04</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Continuous Translation</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Perform a series of different signs from the dataset.</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The prediction text updates to reflect the new signs being performed.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-05</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Model Accuracy Test (Known Sign)</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Perform a clear, simple sign that the model was trained on (e.g., "book").</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The predicted text correctly identifies the sign.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-06</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">System Behavior with No User</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Move completely out of the camera's view.</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The system does not produce new predictions.</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;"><b>TC-07</b></td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Graceful Exit</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">Press the 'q' key while the OpenCV video window is active.</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">The application window closes, and the script terminates without errors.</td>
+        </tr>
+    </tbody>
+</table>

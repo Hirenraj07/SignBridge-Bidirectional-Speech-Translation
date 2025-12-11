@@ -1,0 +1,38 @@
+# Byte-compiled / caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+env/
+venv/
+sign_env/
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & models (don't accidentally commit heavy files)
+data/
+data_raw/
+*.h5
+*.pt
+/models/
+
+# logs and runs
+*.log
+runs/
+tensorboard/
+
+# IDE
+.vscode/
+.idea/
+
+# secrets
+secrets.json
+credentials.json
