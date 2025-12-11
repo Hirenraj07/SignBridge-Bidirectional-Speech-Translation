@@ -1,5 +1,5 @@
-# SignBridge-Bidirectional-Speech-Translation
-#  SignBridge: ANN-based Indian Sign Language Recognition
+# SignBridge-ANN Based Bidirectional-Speech-Translation
+
 SignBridge is an open-source project that enables **Indian Sign Language (ISL) recognition** using a **Convolutional Neural Network (CNN)** pipeline. It processes hand-sign images and converts them into meaningful text predictions.
 
 ---
