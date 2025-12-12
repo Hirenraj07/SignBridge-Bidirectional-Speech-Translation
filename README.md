@@ -3,6 +3,7 @@
 SignBridge is an open-source project that enables **Indian Sign Language (ISL) recognition** using a **Convolutional Neural Network (CNN)** pipeline. It processes hand-sign images and converts them into meaningful text predictions.
 
 ---
+Team - V.Dhruthi Varma link: https://github.com/Dhruthi-i
 ##  Key Features
 - ✔️ Custom-trained **CNN classifier** for ISL  
 - ✔️ Clean training → evaluation → inference pipeline  
